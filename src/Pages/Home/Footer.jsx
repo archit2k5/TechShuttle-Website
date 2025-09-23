@@ -104,7 +104,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/techshuttle-bvp-b5b3402b4/"
+                href="https://www.linkedin.com/company/techshuttle-bvcoe/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -135,18 +135,18 @@ function Footer() {
           <strong>Address:</strong> A-4, Paschim Vihar, New Delhi 110063
         </p>
         <p>
-          <strong>Telephone:</strong> +91 9910631411
+          <strong>Telephone:</strong> +91 9873200339
         </p>
         <p>
           <strong>Email:</strong>{" "}
-          <a href="">sadityak2003@gmail.com</a>
+          <a href="mailto:techshuttle.bvcoe@gmail.com">techshuttle.bvcoe@gmail.com</a>
         </p>
       </div>
       <hr className="divider" />
       <p className="footer--content">
         Designed & Developed with 💖 by TechShuttle Team
       </p>
-      <p className="footer--content">Managed by Aditya Kr. Singh</p>
+      {/* <p className="footer--content">Managed by Aditya Kr. Singh</p> */}
       <div className="footer--bottom">
         <p className="footer--copyright">
           © {new Date().getFullYear()} TechShuttle. All rights reserved.

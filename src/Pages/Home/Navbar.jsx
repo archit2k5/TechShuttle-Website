@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="navbar--logo">
-        <img src="./img/techLogo.png" alt="techShuttle" height="80px" width="80px"/>
+        <img src="./img/tech-logo-new.png" alt="techShuttle" height="100px" width="100px"/>
         <h1 className="navbar--logo--text">TechShuttle</h1>
       </div>
       <button

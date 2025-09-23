@@ -155,6 +155,7 @@ h2 {
 /* Navbar Style Start */
 .navbar {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   padding: 15px 85.333px;
@@ -171,6 +172,8 @@ h2 {
   align-items: center;
   gap: 10.667px;
 }
+
+
 .navbar--logo--text {
   color: var(--primary);
   font-size: 1.5rem;
