@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <Team />
       <AboutMe />
-      <Events />
+      {/* <Events /> */}
       <EventPics />
       <Footer />
     </>
