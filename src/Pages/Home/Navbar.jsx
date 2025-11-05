@@ -156,14 +156,14 @@ function Navbar() {
                 to="EventPics" 
                 className="navbar--content"
               >
-                Participants
+                {/* Participants */}
               </ScrollLink>
             ) : (
               <button 
                 onClick={() => handleScrollClick("EventPics")} 
                 className="navbar--content"
               >
-                Participants
+              {/*   Participants */}
               </button>
             )}
           </li>
