@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import eventsData from "../../data/eventsData.json";
 import EventsPopup from "./components/EventsPopup";
 
 
 export default function Events() {
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <section className="events--section" id="Events">
