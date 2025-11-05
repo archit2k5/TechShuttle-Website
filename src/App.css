@@ -355,7 +355,7 @@ h2 {
 /* Events Starts */
 .events--section {
   display: flex;
-  padding: 200px 85px 100px 85px; /* top right bottom left */
+  padding: 200px 85px 100px 85px; 
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
@@ -392,7 +392,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 42.6px;
-  width: 40%;
+  width: 100%;
 }
 .events--section--img {
   display:flex;
@@ -405,23 +405,22 @@ h2 {
 }
 .events--section--img > img {
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: contain;
+  border-radius: 8px 8px 0 0;
 }
 .events--section--card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  flex: 1 0 0;
   width: 320px;
+  min-height: 360px; 
   background: #fff;
-  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 32px rgba(0,0,0,0.15);
   cursor: pointer;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px 12px 0 0;
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
+  flex-shrink: 0;
 }
 .events--section--card--content {
   display: flex;
@@ -429,7 +428,14 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  align-self: stretch;
+}
+.events--section--card--content p.text-md {
+  flex-grow: 1;  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
 }
 
 .events--section--card:nth-child(1) { animation-delay: 0.1s; }
@@ -486,6 +492,7 @@ h2 {
   display: flex;
   flex-direction: row;
   width: 90%;
+  max-height:90vh;
   max-width: 1000px;
   background: #141726;
   color: #fff;
@@ -503,7 +510,7 @@ h2 {
 .popup-bg-animation {
   position: absolute;
   top: 0; right: 0;
-  width: 180px;
+  width: 60px;
   opacity: 0.2;
   pointer-events: none;
   z-index: 0;
@@ -566,6 +573,9 @@ h2 {
   gap: 8px;
   margin-top: 10px;
   overflow-x: auto;
+  padding-bottom: 8px; 
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #eee; 
 }
 
 .thumbnail {

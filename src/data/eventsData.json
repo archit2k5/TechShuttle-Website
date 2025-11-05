@@ -20,6 +20,93 @@
       "/assets/events/freshers4.jpg",
       "/assets/events/freshers5.jpg"
     ]
+  },
+  {
+    "id": 2,
+    "title": "Break The Pass",
+    "tag": "Student Induction Programme",
+    "description": "The main objective is to promote technology and innovation to improve lives, solve social challenges and enhance human capacity. Encourage education and knowledge sharing in technology-related areas to enable individuals and communities to acquire the skills and knowledge needed to succeed in the digital age. To foster collaboration and networking among practitioners, researchers, entrepreneurs and interested parties to exchange ideas, share resources and promote joint technological advancement.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Welcome Ceremony",
+      "Icebreaker Games & Fun Activities",
+      "Team-Building Sessions",
+      "Rewards & Recognition"
+    ],
+    "date": "August 25, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - 4th Floor",
+    "images": [
+      "./img/event1/breakThePassword.jpg",
+      "/assets/events/freshers2.jpg",
+      "/assets/events/freshers3.jpg",
+      "/assets/events/freshers4.jpg",
+      "/assets/events/freshers5.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Break The Pass",
+    "tag": "Student Induction Programme",
+    "description": "The main objective is to promote technology and innovation to improve lives, solve social challenges and enhance human capacity. Encourage education and knowledge sharing in technology-related areas to enable individuals and communities to acquire the skills and knowledge needed to succeed in the digital age. To foster collaboration and networking among practitioners, researchers, entrepreneurs and interested parties to exchange ideas, share resources and promote joint technological advancement.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Welcome Ceremony",
+      "Icebreaker Games & Fun Activities",
+      "Team-Building Sessions",
+      "Rewards & Recognition"
+    ],
+    "date": "August 25, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - 4th Floor",
+    "images": [
+      "./img/event1/breakThePassword.jpg",
+      "/assets/events/freshers2.jpg",
+      "/assets/events/freshers3.jpg",
+      "/assets/events/freshers4.jpg",
+      "/assets/events/freshers5.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Break The Pass",
+    "tag": "Student Induction Programme",
+    "description": "The main objective is to promote technology and innovation to improve lives, solve social challenges and enhance human capacity. Encourage education and knowledge sharing in technology-related areas to enable individuals and communities to acquire the skills and knowledge needed to succeed in the digital age. To foster collaboration and networking among practitioners, researchers, entrepreneurs and interested parties to exchange ideas, share resources and promote joint technological advancement.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Welcome Ceremony",
+      "Icebreaker Games & Fun Activities",
+      "Team-Building Sessions",
+      "Rewards & Recognition"
+    ],
+    "date": "August 25, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - 4th Floor",
+    "images": [
+      "./img/event1/breakThePassword.jpg",
+      "/assets/events/freshers2.jpg",
+      "/assets/events/freshers3.jpg",
+      "/assets/events/freshers4.jpg",
+      "/assets/events/freshers5.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Break The Pass",
+    "tag": "Student Induction Programme",
+    "description": "The main objective is to promote technology and innovation to improve lives, solve social challenges and enhance human capacity. Encourage education and knowledge sharing in technology-related areas to enable individuals and communities to acquire the skills and knowledge needed to succeed in the digital age. To foster collaboration and networking among practitioners, researchers, entrepreneurs and interested parties to exchange ideas, share resources and promote joint technological advancement.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Welcome Ceremony",
+      "Icebreaker Games & Fun Activities",
+      "Team-Building Sessions",
+      "Rewards & Recognition"
+    ],
+    "date": "August 25, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - 4th Floor",
+    "images": [
+      "./img/event1/breakThePassword.jpg",
+      "/assets/events/freshers2.jpg",
+      "/assets/events/freshers3.jpg",
+      "/assets/events/freshers4.jpg",
+      "/assets/events/freshers5.jpg"
+    ]
   }
-  
 ]
