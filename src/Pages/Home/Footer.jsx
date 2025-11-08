@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import React from "react";
 
 function Footer() {
@@ -50,17 +51,9 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Events"
-                className="text-md"
-              >
+              <RouterLink to="/events" className="text-md">
                 Events
-              </Link>
+              </RouterLink>
             </li>
             <li>
               <Link
@@ -72,7 +65,7 @@ function Footer() {
                 to="EventPics"
                 className="text-md"
               >
-                Participants
+                {/* Participants */}
               </Link>
             </li>
           </ul>
