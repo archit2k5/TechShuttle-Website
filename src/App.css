@@ -273,6 +273,12 @@ h2 {
   font-weight: 700;
   line-height: 77px;
 }
+.team--section--container.heads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42.6px;
+  justify-items: center;
+}
 .team--section--container {
   display: flex;
   justify-content: center;
@@ -299,16 +305,19 @@ h2 {
   color: var(--darkblue);
 }
 .team--section--img {
+  width: 250px;
+  height: 250px;         
   display: flex;
-  padding: 12px;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  height: 100%;
-  border-radius: 10.6px;
+  overflow: hidden;      
   background: #fff;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  border-radius: 10.6px;
+}
+  .team--section--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
 }
 .team--section--card--content {
   display: flex;
@@ -438,6 +447,7 @@ h2 {
   text-overflow: ellipsis;
 }
 
+/* This is for event cards' animation */
 .events--section--card:nth-child(1) { animation-delay: 0.1s; }
 .events--section--card:nth-child(2) { animation-delay: 0.2s; }
 .events--section--card:nth-child(3) { animation-delay: 0.3s; }
@@ -994,3 +1004,57 @@ h2 {
 }
 
 /* Responsive Screens Ends*/
+
+/* OLD TEAM SLIDER */
+.old-team-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.old-team-slider {
+  display: flex;
+  gap: 42.6px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.old-team-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keep card width fixed so horizontal scroll works */
+.old-team-slider .team--section--card {
+  flex: 0 0 300px;
+}
+
+/* Slider Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn.left {
+  left: -20px;
+}
+
+.slider-btn.right {
+  right: -20px;
+}
+
+.slider-btn:hover {
+  background: var(--primary);
+}

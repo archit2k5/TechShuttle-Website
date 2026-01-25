@@ -1,66 +1,41 @@
-import data from "../../data/index.json";
+import data from "../../data/data2025.json";
 
 export default function Team() {
+  const renderCards = (list) =>
+    list.map((item) => (
+      <div key={item.id} className="team--section--card">
+        <div className="team--section--img">
+          <img src={item.src} alt={item.title} />
+        </div>
+
+        <div className="team--section--card--content">
+          <h3 className="team--section--title">{item.title}</h3>
+          <p className="team--section--description">
+            {item.description}
+          </p>
+        </div>
+      </div>
+    ));
+
   return (
     <section className="team--section" id="Team">
       <div className="team--container">
         <h2 className="team--section--heading">Our Team</h2>
       </div>
-      
+
+      {/* Faculty + President */}
       <div className="team--section--container">
-        {data?.faculty?.map((item, index) => (
-          <div key={index} className="team--section--card">
-            <div className="team--section--img">
-              <img src={item.src} alt="Product Chain" height="250px" width="250px"/>
-            </div>
-            <div className="team--section--card--content">
-              <h3 className="team--section--title">{item.title}</h3>
-              <p className="team--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
+        {renderCards(data.top)}
       </div>
 
+      {/* Core Members */}
       <div className="team--section--container">
-        {data?.core1?.map((item, index) => (
-          <div key={index} className="team--section--card">
-            <div className="team--section--img">
-              <img src={item.src} alt="Product Chain" height="250px" width="250px"/>
-            </div>
-            <div className="team--section--card--content">
-              <h3 className="team--section--title">{item.title}</h3>
-              <p className="team--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
+        {renderCards(data.core)}
       </div>
 
-      <div className="team--section--container">
-        {data?.core2?.map((item, index) => (
-          <div key={index} className="team--section--card">
-            <div className="team--section--img">
-              <img src={item.src} alt="Product Chain" height="250px" width="300px"/>
-            </div>
-            <div className="team--section--card--content">
-              <h3 className="team--section--title">{item.title}</h3>
-              <p className="team--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="team--section--container">
-        {data?.core3?.map((item, index) => (
-          <div key={index} className="team--section--card">
-            <div className="team--section--img">
-              <img src={item.src} alt="Product Chain" height="250px" width="300px"/>
-            </div>
-            <div className="team--section--card--content">
-              <h3 className="team--section--title">{item.title}</h3>
-              <p className="team--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
+      {/* Heads (auto wraps to 3 + 3) */}
+      <div className="team--section--container heads">
+        {renderCards(data.heads)}
       </div>
     </section>
   );

@@ -1,144 +1,70 @@
 {
-  "faculty": [
-    {
-      "id": "1",
-      "src": "./img/faculty.jpg",
-      "title": "Dr. Rajat Gupta",
-      "description": "Faculty Incharge at TechShuttle"
-    }
-  ],
   "core1": [
     {
       "id": "1",
-      "src": "./img/arjun.jpg",
+      "src": "/img/arjun.jpg",
       "title": "Arjun Srivastava",
-      "description": "Vice - Pre. at TechShuttle"
+      "description": "Former Vice President, TechShuttle"
     },
     {
       "id": "2",
-      "src": "./img/manoj.png",
+      "src": "/img/manoj.png",
       "title": "Manoj",
-      "description": "President at TechShuttle"
+      "description": "Former President, TechShuttle"
     },
     {
       "id": "3",
-      "src": "./img/ansh2.jpg",
+      "src": "/img/ansh2.jpg",
       "title": "Ansh Sharma",
-      "description": "Gen. Scretary at TechShuttle"
+      "description": "Former General Secretary, TechShuttle"
     }
   ],
+
   "core2": [
     {
-      "id": "1",
-      "src": "./img/aditya_me.png",
-      "title": "Aditya Kr. Singh",
-      "description": "Technical Head at TechShuttle"},
-    {
-      "id": "2",
-      "src": "./img/sandeep.jpg",
-      "title": "Sandeep",
-      "description": "Design Head at TechShuttle"},
-    {
-      "id": "3",
-      "src": "./img/akshay.jpg",
-      "title": "Akshay Kumar",
-      "description": "C & D Head at TechShuttle"},
-    {
       "id": "4",
-      "src": "./img/niyati.jpg",
+      "src": "/img/aditya_me.png",
+      "title": "Aditya Kr. Singh",
+      "description": "Former Technical Head, TechShuttle"
+    },
+    {
+      "id": "5",
+      "src": "/img/sandeep.jpg",
+      "title": "Sandeep",
+      "description": "Former Design Head, TechShuttle"
+    },
+    {
+      "id": "6",
+      "src": "/img/akshay.jpg",
+      "title": "Akshay Kumar",
+      "description": "Former Content & Documentation Head, TechShuttle"
+    },
+    {
+      "id": "7",
+      "src": "/img/niyati.jpg",
       "title": "Niyati Sharma",
-      "description": "Event Mng. Head at TechShuttle"}
+      "description": "Former Event Management Head, TechShuttle"
+    }
   ],
+
   "core3": [
     {
-      "id": "1",
-      "src": "./img/khushi.jpg",
+      "id": "8",
+      "src": "/img/khushi.jpg",
       "title": "Khushi",
-      "description": "Social Media Head at TechShuttle"},
+      "description": "Former Social Media Head, TechShuttle"
+    },
     {
-      "id": "2",
-      "src": "./img/sharansh.png",
+      "id": "9",
+      "src": "/img/sharansh.png",
       "title": "Sharansh Rajput",
-      "description": "PR & Sponsor Head at TechShuttle"},
+      "description": "Former PR & Sponsorship Head, TechShuttle"
+    },
     {
-      "id": "3",
-      "src": "./img/amaan.jpg",
+      "id": "10",
+      "src": "/img/amaan.jpg",
       "title": "Amaan Ansari",
-      "description": "Treasurer at TechShuttle"}
-    
-  ],
-  "events": [
-    {
-      "id": "1",
-      "src": "./img/breakThePassword.jpg",
-      "title": "Break the Password",
-      "description": "Online Password Cracking Event",
-      "link": "View On Instagram"
-    },
-    {
-      "id": "2",
-      "src": "./img/goc.png",
-      "title": "Game of Code",
-      "description": "Offline Coding Event",
-      "link": "View On Instagram"
-    },
-    {
-      "id": "3",
-      "src": "./img/qa.jpg",
-      "title": "Quantitative Aptitude",
-      "description": "Online Coding Event",
-      "link": "View On Instagram"
-    }
-  ],
-  "eventPicsBTP": [
-    {
-      "id": "1",
-      "src": "./img/break1.jpg",
-      "title": "Break the Password"
-    },
-    {
-      "id": "2",
-      "src": "./img/break2.jpg",
-      "title": "Break the Password"
-    },
-    {
-      "id": "3",
-      "src": "./img/break3.jpg",
-      "title": "Break the Password"
-    }
-  ],
-  "eventPicsGOC": [
-    {
-      "id": "1",
-      "src": "./img/goc1.jpg",
-      "title": "Game of Code"
-    },
-    {
-      "id": "2",
-      "src": "./img/goc2.jpg",
-      "title": "Game of Code"
-    },
-    {
-      "id": "3",
-      "src": "./img/goc3.jpg",
-      "title": "Game of Code"
-    }
-  ],
-  "eventPicsQA": [
-    {
-      "id": "1",
-      "src": "./img/qa1.jpg",
-      "title": "Game of Code"
-    },
-    {
-      "id": "2",
-      "src": "./img/qa2.jpg",
-      "title": "Game of Code"
-    },
-    {
-      "id": "3",
-      "src": "./img/qa4.jpg",
-      "title": "Game of Code"
+      "description": "Former Treasurer, TechShuttle"
     }
   ]
 }

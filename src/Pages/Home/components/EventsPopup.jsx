@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
-import popupAnimation from "../../../assets/animations/popupAnimation.json";
 
 
 const EventsPopup = ({ event, onClose }) => {
@@ -24,9 +23,9 @@ const EventsPopup = ({ event, onClose }) => {
         <button className="popup-close" onClick={onClose}>✕</button>
 
         {/* Lottie Animation */}
-        <div className="popup-bg-animation">
+        {/* <div className="popup-bg-animation">
           <Lottie animationData={popupAnimation} loop={false} />
-        </div>
+        </div> */}
 
         {/* Left Section (Images) */}
         <div className="popup-left">

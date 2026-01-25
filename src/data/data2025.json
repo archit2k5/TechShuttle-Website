@@ -1,0 +1,76 @@
+{
+  "top": [
+    {
+      "id": "1",
+      "src": "/img/faculty.jpg",
+      "title": "Dr. Rajat Gupta",
+      "description": "Faculty Incharge"
+    },
+    {
+      "id": "2",
+      "src": "/img/Team2025/Garv.jpg",
+      "title": "Garv Mittal",
+      "description": "President"
+    }
+  ],
+
+  "core": [
+    {
+      "id": "3",
+      "src": "/img/saisha.jpg",
+      "title": "Saisha Chopra",
+      "description": "Vice President"
+    },
+    {
+      "id": "4",
+      "src": "/img/chhavi.jpg",
+      "title": "Chhavi Gaba",
+      "description": "General Secretary"
+    },
+    {
+      "id": "5",
+      "src": "/img/ipshita.jpg",
+      "title": "Ipshita Porov",
+      "description": "Treasurer"
+    }
+  ],
+
+  "heads": [
+    {
+      "id": "6",
+      "src": "/img/aadhar.jpg",
+      "title": "Aadhar Kapoor",
+      "description": "Design Head"
+    },
+    {
+      "id": "7",
+      "src": "/img/deepika.jpg",
+      "title": "Deepika",
+      "description": "Content & Documentation Head"
+    },
+    {
+      "id": "8",
+      "src": "/img/hansuja.jpg",
+      "title": "Hansuja Raina",
+      "description": "Event Management Head"
+    },
+    {
+      "id": "9",
+      "src": "/img/krish.jpg",
+      "title": "Krish Sethi",
+      "description": "Sponsorship Head"
+    },
+    {
+      "id": "10",
+      "src": "/img/archit.jpg",
+      "title": "Archit Singh",
+      "description": "Technical Head"
+    },
+    {
+      "id": "11",
+      "src": "/img/dhruv.jpg",
+      "title": "Dhruv Sharma",
+      "description": "Social Media Head"
+    }
+  ]
+}
