@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Lottie from "lottie-react";
 
 
 const EventsPopup = ({ event, onClose }) => {
