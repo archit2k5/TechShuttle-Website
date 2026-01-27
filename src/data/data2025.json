@@ -17,19 +17,19 @@
   "core": [
     {
       "id": "3",
-      "src": "/img/saisha.jpg",
+      "src": "/img/Team2025/Saisha.jpg",
       "title": "Saisha Chopra",
       "description": "Vice President"
     },
     {
       "id": "4",
-      "src": "/img/chhavi.jpg",
+      "src": "/img/Team2025/Chhavi.jpg",
       "title": "Chhavi Gaba",
       "description": "General Secretary"
     },
     {
       "id": "5",
-      "src": "/img/ipshita.jpg",
+      "src": "/img/Team2025/Ipshita.jpeg",
       "title": "Ipshita Porov",
       "description": "Treasurer"
     }
@@ -38,37 +38,37 @@
   "heads": [
     {
       "id": "6",
-      "src": "/img/aadhar.jpg",
+      "src": "/img/Team2025/Aadhar.jpeg",
       "title": "Aadhar Kapoor",
       "description": "Design Head"
     },
     {
       "id": "7",
-      "src": "/img/deepika.jpg",
+      "src": "/img/Team2025/Deepika.jpg",
       "title": "Deepika",
       "description": "Content & Documentation Head"
     },
     {
       "id": "8",
-      "src": "/img/hansuja.jpg",
+      "src": "/img/Team2025/Hansuja.jpeg",
       "title": "Hansuja Raina",
       "description": "Event Management Head"
     },
     {
       "id": "9",
-      "src": "/img/krish.jpg",
+      "src": "/img/Team2025/krish.jpeg",
       "title": "Krish Sethi",
       "description": "Sponsorship Head"
     },
     {
       "id": "10",
-      "src": "/img/archit.jpg",
+      "src": "/img/Team2025/Archit.jpeg",
       "title": "Archit Singh",
       "description": "Technical Head"
     },
     {
       "id": "11",
-      "src": "/img/dhruv.jpg",
+      "src": "/img/Team2025/Dhruv.jpg",
       "title": "Dhruv Sharma",
       "description": "Social Media Head"
     }
