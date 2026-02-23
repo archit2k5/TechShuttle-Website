@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# TechShuttle Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official website for **TechShuttle** - The Technical Society of BVCOE, New Delhi.
 
-## Available Scripts
+## 🚀 About TechShuttle
 
-In the project directory, you can run:
+TechShuttle is a student-run technical society at Bharati Vidyapeeth's College of Engineering (BVCOE), New Delhi. We organize workshops, coding competitions, tech talks, and collaborative events to empower students in their tech journey.
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+TechShuttle-Website/
+├── public/
+│   ├── index.html
+│   ├── robots.txt
+│   └── img/
+│       ├── faculty.jpg
+│       ├── Team2025/          # Current team photos
+│       ├── event1/            # Event 1 images
+│       ├── event2/            # Event 2 images
+│       ├── event3/            # Event 3 images
+│       ├── event4/            # Tech Baliye images
+│       ├── event5/            # CodeSpirit: PyLaunch images
+│       ├── event6/            # Code Golfing images
+│       └── event7/            # TechTussle images
+│
+├── src/
+│   ├── App.js                 # Main app component with routing
+│   ├── App.css                # Global styles
+│   ├── index.js               # Entry point
+│   │
+│   ├── assets/
+│   │   ├── animations/        # Lottie animation JSON files
+│   │   └── svg/               # SVG assets
+│   │
+│   ├── data/
+│   │   ├── data2025.json      # Current team (2025) data
+│   │   ├── eventsData.json    # Events information
+│   │   └── index.json         # Previous team members data
+│   │
+│   └── Pages/
+│       └── Home/
+│           ├── Homescreen/
+│           │   └── index.jsx      # Home page layout
+│           ├── Navbar.jsx         # Navigation bar
+│           ├── HeroSection.jsx    # Hero with particle animation
+│           ├── Statistics.jsx     # Animated counters
+│           ├── Features.jsx       # What we offer section
+│           ├── AboutMe.jsx        # About us section
+│           ├── Events.jsx         # Events grid
+│           ├── EventPics.jsx      # Event gallery
+│           ├── Team.jsx           # Current team section
+│           ├── OldTeamSlider.jsx  # Alumni slider
+│           ├── Testimonials.jsx   # Testimonials carousel
+│           ├── Timeline.jsx       # Society journey/story
+│           ├── Partners.jsx       # Partner societies
+│           ├── Newsletter.jsx     # Newsletter signup
+│           ├── Footer.jsx         # Footer
+│           └── components/
+│               └── EventsPopup.jsx # Event details modal
+│
+├── package.json
+└── README.md
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React 19** - Frontend framework
+- **React Router DOM 7** - Client-side routing
+- **Swiper** - Touch slider for carousels
+- **Lottie React** - Animations
+- **CSS3** - Custom styling with CSS variables
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v18 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/TechShuttle-Website.git
 
-### `npm run eject`
+# Navigate to project directory
+cd TechShuttle-Website
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Start development server
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will run at [http://localhost:3000](http://localhost:3000)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Build for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 Adding Events
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To add a new event, edit `src/data/eventsData.json`:
 
-### Code Splitting
+```json
+{
+  "id": 8,
+  "title": "Event Name",
+  "tag": "Workshop",
+  "description": "Event description...",
+  "speakers": ["Speaker 1", "Speaker 2"],
+  "agenda": ["Item 1", "Item 2"],
+  "date": "Month Day, Year at Time",
+  "venue": "BVCOE, New Delhi",
+  "images": ["./img/event8/photo1.jpg"],
+  "highlights": ["Highlight 1", "Highlight 2"]
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Then add event images to `public/img/event8/`.
 
-### Analyzing the Bundle Size
+## 📝 Updating Team
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Current Team**: Edit `src/data/data2025.json`
+- **Previous Team**: Edit `src/data/index.json`
+- **Photos**: Add to `public/img/Team2025/`
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is maintained by TechShuttle, BVCOE.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by TechShuttle

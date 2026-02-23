@@ -5,16 +5,16 @@
       "src": "/img/faculty.jpg",
       "title": "Dr. Rajat Gupta",
       "description": "Faculty Incharge"
-    },
+    }
+  ],
+
+  "core": [
     {
       "id": "2",
       "src": "/img/Team2025/Garv.jpg",
       "title": "Garv Mittal",
       "description": "President"
-    }
-  ],
-
-  "core": [
+    },
     {
       "id": "3",
       "src": "/img/Team2025/Saisha.jpg",

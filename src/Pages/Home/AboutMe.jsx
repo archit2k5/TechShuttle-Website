@@ -13,10 +13,10 @@ export default function AboutUs() {
           <p className="section--title">About</p>
           <h1 className="team-section--heading">About Us</h1>
           <p className="hero--section-description">
-            Tech Shuttle is the official tech society of our college, dedicated
+            TechShuttle is the official tech society of BVCOE, New Delhi, dedicated
             to fostering innovation, collaboration, and technical excellence. We
-            organize coding competitions, hackathons, workshops, and tech talks
-            to help students enhance their skills in programming, AI, web
+            organize coding competitions, workshops, and tech talks
+            to help students enhance their skills in programming, data science, web
             development, and more. Our mission is to create a dynamic community
             where tech enthusiasts can learn, grow, and push the boundaries of
             technology together. 🚀

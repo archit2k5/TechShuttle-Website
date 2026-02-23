@@ -1,70 +1,195 @@
 [
   {
     "id": 1,
-    "title": "Quantitative Aptitude is NOT just Math!",
-    "tag": "Event",
-    "description": "The objective of Quantitative Aptitude is NOT just Math! is to equip 2nd and 3rd-year students with a deeper understanding of aptitude beyond just mathematical calculations, preparing them for placements and competitive exams. Through an engaging and interactive masterclass led by Mr. Sharad Awasthi, an esteemed IIT BHU & IIM Lucknow alumnus, students will learn how to think strategically and solve problems efficiently. The session aims to demystify aptitude, transforming it from a mere numerical exercise into a skill that enhances logical reasoning, decision-making, and smart problem solving. With real-world insights, practical strategies, and expert guidance, this event will empower students with the confidence and techniques needed to excel in their careers.",
-    "speakers": ["Core & Head Team"],
+    "title": "Tech Baliye",
+    "tag": "Techno-Cultural Fest",
+    "description": "Tech Baliye was a one-of-a-kind techno-cultural extravaganza organized collaboratively by TechShuttle × BVPCSI × Aura. The event integrated technology, dance, and innovation under one stage, demonstrating the creative synergy between technology and art. From Code & Choreo Showdown to the Grand Fusion finale themed 'The Pulse of Innovation' — participants showcased not just their artistic flair but also their technological insight, turning code into choreography and logic into rhythm.",
+    "speakers": ["Garv Mittal", "Saisha Chopra", "Chhavi Gaba", "Ipshita Porov", "Dhruv Sharma", "Hansuja Raina"],
     "agenda": [
-      "Welcome Ceremony",
-      "Icebreaker Games & Fun Activities",
-      "Team-Building Sessions",
-      "Rewards & Recognition"
+      "Round 1 – Tech Quiz Showdown: Fast-paced quiz testing technology and problem-solving",
+      "Round 2 – The Creative Crossover: Live dance performance by Aura blending rhythm with reason",
+      "Round 3 – Online Challenge: Advanced concepts and real-world tech applications",
+      "Round 4 – The Buzzer Battle: Speed, accuracy, and teamwork competition"
     ],
-    "date": "February 3, 2025 at 10:00 AM",
-    "venue": "BVCOE, New Delhi - Library",
+    "date": "October 9, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi",
     "images": [
-      "./img/event3/qa.jpg",
-      "./img/event3/qa1.jpg",
-      "./img/event3/qa2.jpg",
-      "./img/event3/qa3.png",
-      "./img/event3/qa4.jpg",
-      "./img/event3/qa5.png"
+      "./img/tech-baliye/techbaliye.jpg",
+      "./img/tech-baliye/techbaliye1.jpg",
+      "./img/tech-baliye/techbaliye2.jpg"
+    ],
+    "highlights": [
+      "50+ active participants",
+      "300+ audience members",
+      "Collaboration with BVPCSI & Aura",
+      "4 innovative competition rounds"
     ]
   },
   {
     "id": 2,
-    "title": "Game of Code-2.0",
-    "tag": "Event",
-    "description": "The objective of this event is to engage participants in a challenging and interactive problem-solving competition. The event is designed to test participants' logical thinking, teamwork, and cryptographic skills as they work together to decipher a given password. The ultimate goal is to create a fun, educational, and competitive environment where participants can apply their analytical abilities in real-time scenarios.",
-    "speakers": ["Core & Head Team"],
+    "title": "CodeSpirit: PyLaunch",
+    "tag": "Workshop",
+    "description": "CodeSpirit: PyLaunch was an interactive workshop designed to introduce participants to Python-based data science fundamentals. The session bridged the gap between theoretical knowledge and real-world application by familiarizing students with widely used Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn. Through hands-on demonstrations and guided practice, participants explored data-driven problem-solving and developed confidence in using Python as a tool for analytics and technology-driven projects.",
+    "speakers": ["Pratham Chhabra", "Dishika Gupta"],
     "agenda": [
-      "Welcome Ceremony",
-      "Icebreaker Games & Fun Activities",
-      "Team-Building Sessions",
-      "Rewards & Recognition"
+      "Introduction to Python for Data Science",
+      "NumPy: Arrays and numerical computing basics",
+      "Pandas: Data manipulation and analysis",
+      "Matplotlib & Seaborn: Data visualization techniques",
+      "Hands-on practice with real datasets"
     ],
-    "date": "October 19, 2024 at 10:00 AM",
-    "venue": "BVCOE, New Delhi - 4th Floor",
+    "date": "November 17, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi",
     "images": [
-      "./img/event2/goc.png",
-      "./img/event2/goc1.jpg",
-      "./img/event2/goc2.jpg",
-      "./img/event2/goc3.jpg",
-      "./img/event2/goc4.jpg"
+      "./img/pylaunch/Pylaunch-poster.jpeg"
+    ],
+    "highlights": [
+      "40+ student participants",
+      "Beginner-friendly approach",
+      "Hands-on coding sessions",
+      "Industry-relevant Python skills"
     ]
   },
   {
     "id": 3,
-    "title": "Break The Pass",
-    "tag": "Event",
-    "description": "The main objective is to promote technology and innovation to improve lives, solve social challenges and enhance human capacity. Encourage education and knowledge sharing in technology-related areas to enable individuals and communities to acquire the skills and knowledge needed to succeed in the digital age. To foster collaboration and networking among practitioners, researchers, entrepreneurs and interested parties to exchange ideas, share resources and promote joint technological advancement.",
+    "title": "Code Golfing",
+    "tag": "Competition",
+    "description": "Code Golfing challenged participants to solve Data Structures and Algorithms (DSA) problems using the least number of characters possible, emphasizing code efficiency and logic minimalism over verbosity. Hosted on the HackerRank platform, the event improved creative problem-solving and introduced students to writing clean, concise and optimized code. It encouraged participants to think beyond traditional methods and approach problems from a fresh, innovative perspective, blending speed, logic, and mastery of syntax into one high-intensity session.",
     "speakers": ["Core & Head Team"],
     "agenda": [
-      "Welcome Ceremony",
-      "Icebreaker Games & Fun Activities",
-      "Team-Building Sessions",
+      "DSA problems with character limit constraints",
+      "HackerRank platform challenges",
+      "Timed coding rounds",
+      "Code optimization techniques",
+      "Winner announcement & prizes"
+    ],
+    "date": "April 22, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi",
+    "images": [
+      "./img/code-golfing/codegolf.jpg",
+      "./img/code-golfing/codegolf1.jpg",
+      "./img/code-golfing/codegolf2.jpg"
+    ],
+    "highlights": [
+      "30+ participants",
+      "Hosted on HackerRank",
+      "Focus on code minimalism",
+      "DSA problem-solving"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "TechTussle",
+    "tag": "Competition",
+    "description": "TechTussle was a challenging and interactive problem-solving competition based on Data Structures and Algorithms (DSA). The event tested participants' logical thinking and real-time performance under pressure through a dynamic two-round format. The quiz round reinforced core theoretical concepts, while the buzzer round challenged participants to think critically and act swiftly, enhancing both decision-making and problem-solving speed.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Round 1 – Quiz Round: DSA & AI theoretical concepts",
+      "Round 2 – Buzzer Round: Real-time problem solving under pressure",
+      "Platform: Quizzer & Online buzzer systems",
+      "Prize distribution ceremony"
+    ],
+    "date": "February 28, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi",
+    "images": [
+      "./img/techtussle/techtussle.jpg",
+      "./img/techtussle/techtussle1.jpg",
+      "./img/techtussle/techtussle2.jpg"
+    ],
+    "highlights": [
+      "25+ participants",
+      "Two-round format",
+      "DSA & AI focused",
+      "Real-time buzzer challenges"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Quantitative Aptitude is NOT just Math!",
+    "tag": "Masterclass",
+    "description": "An engaging and interactive masterclass designed to help students master smart problem-solving techniques for placements and competitive exams. Led by Mr. Sharad Awasthi, an esteemed IIT BHU & IIM Lucknow alumnus and VP Academics at CL Educate, students learned strategic thinking, logical reasoning, and efficient problem-solving beyond traditional mathematical calculations. The session demystified aptitude and equipped students with confidence for CAT, GRE, GMAT, and campus placements.",
+    "speakers": ["Mr. Sharad Awasthi (IIT BHU & IIM Lucknow, VP Academics - CL Educate)"],
+    "agenda": [
+      "Strategic thinking for aptitude problems",
+      "Beyond calculations: Logical reasoning techniques",
+      "Decision-making and smart problem solving",
+      "Shortcuts and techniques for competitive exams",
+      "Real-world insights and practical strategies"
+    ],
+    "date": "February 3, 2025 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - Library",
+    "images": [
+      "./img/quantitative-aptitude/qa.jpg",
+      "./img/quantitative-aptitude/qa1.jpg",
+      "./img/quantitative-aptitude/qa2.jpg",
+      "./img/quantitative-aptitude/qa3.png",
+      "./img/quantitative-aptitude/qa4.jpg",
+      "./img/quantitative-aptitude/qa5.png"
+    ],
+    "highlights": [
+      "110+ participants",
+      "Industry expert speaker",
+      "Placement preparation focused",
+      "Interactive Q&A session"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Game of Code 2.0",
+    "tag": "Competition",
+    "description": "Game of Code 2.0 engaged participants in a challenging and interactive problem-solving competition. Participants played a Jumble Code round followed by matching outputs for given code. The event tested logical thinking, teamwork, and cryptographic skills as teams worked together to decipher problems. The ultimate goal was to create a fun, educational, and competitive environment where participants applied their analytical abilities in real-time scenarios.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Jumble Code Round",
+      "Output Matching Challenge",
+      "Team-based problem solving",
+      "Time-bound competitions",
+      "Prize distribution"
+    ],
+    "date": "October 19, 2024 at 10:00 AM",
+    "venue": "BVCOE, New Delhi - 4th Floor",
+    "images": [
+      "./img/game-of-code/goc.png",
+      "./img/game-of-code/goc1.jpg",
+      "./img/game-of-code/goc2.jpg",
+      "./img/game-of-code/goc3.jpg",
+      "./img/game-of-code/goc4.jpg"
+    ],
+    "highlights": [
+      "30+ participants",
+      "Multiple coding rounds",
+      "Team collaboration",
+      "Cryptographic challenges"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Break The Password",
+    "tag": "Competition",
+    "description": "Break The Password engaged participants in a challenging and interactive problem-solving competition designed to test logical thinking, teamwork, and cryptographic skills. Participants worked together to decipher given passwords under time pressure. The event promoted technology innovation, education, and knowledge sharing while creating a fun and competitive environment where analytical abilities were applied in real-time scenarios.",
+    "speakers": ["Core & Head Team"],
+    "agenda": [
+      "Introduction & Rules briefing",
+      "Password decryption challenges",
+      "Team collaboration rounds",
+      "Time-bound problem solving",
       "Rewards & Recognition"
     ],
     "date": "August 20, 2024 at 10:00 AM",
     "venue": "BVCOE, New Delhi - 4th Floor",
     "images": [
-      "./img/event1/breakThePassword.jpg",
-      "./img/event1/break1.jpg",
-      "./img/event1/break2.jpg",
-      "./img/event1/break3.jpg",
-      "./img/event1/break4.png",
-      "./img/event1/break5.png"
+      "./img/break-the-password/breakThePassword.jpg",
+      "./img/break-the-password/break1.jpg",
+      "./img/break-the-password/break2.jpg",
+      "./img/break-the-password/break3.jpg",
+      "./img/break-the-password/break4.png",
+      "./img/break-the-password/break5.png"
+    ],
+    "highlights": [
+      "30+ participants",
+      "Cryptography focused",
+      "Team-based challenges",
+      "Critical thinking emphasis"
     ]
   }
 ]

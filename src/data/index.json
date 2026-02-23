@@ -2,45 +2,51 @@
   "core1": [
     {
       "id": "1",
-      "src": "/img/arjun.jpg",
-      "title": "Arjun Srivastava",
-      "description": "Former Vice President, TechShuttle"
-    },
-    {
-      "id": "2",
       "src": "/img/manoj.png",
       "title": "Manoj",
       "description": "Former President, TechShuttle"
+    },
+    {
+      "id": "2",
+      "src": "/img/arjun.jpg",
+      "title": "Arjun Srivastava",
+      "description": "Former Vice President, TechShuttle"
     },
     {
       "id": "3",
       "src": "/img/ansh2.jpg",
       "title": "Ansh Sharma",
       "description": "Former General Secretary, TechShuttle"
+    },
+    {
+      "id": "4",
+      "src": "/img/amaan.jpg",
+      "title": "Amaan Ansari",
+      "description": "Former Treasurer, TechShuttle"
     }
   ],
 
   "core2": [
     {
-      "id": "4",
+      "id": "5",
       "src": "/img/aditya_me.png",
       "title": "Aditya Kr. Singh",
       "description": "Former Technical Head, TechShuttle"
     },
     {
-      "id": "5",
+      "id": "6",
       "src": "/img/sandeep.jpg",
       "title": "Sandeep",
       "description": "Former Design Head, TechShuttle"
     },
     {
-      "id": "6",
+      "id": "7",
       "src": "/img/akshay.jpg",
       "title": "Akshay Kumar",
       "description": "Former Content & Documentation Head, TechShuttle"
     },
     {
-      "id": "7",
+      "id": "8",
       "src": "/img/niyati.jpg",
       "title": "Niyati Sharma",
       "description": "Former Event Management Head, TechShuttle"
@@ -49,22 +55,16 @@
 
   "core3": [
     {
-      "id": "8",
+      "id": "9",
       "src": "/img/khushi.jpg",
       "title": "Khushi",
       "description": "Former Social Media Head, TechShuttle"
     },
     {
-      "id": "9",
+      "id": "10",
       "src": "/img/sharansh.png",
       "title": "Sharansh Rajput",
       "description": "Former PR & Sponsorship Head, TechShuttle"
-    },
-    {
-      "id": "10",
-      "src": "/img/amaan.jpg",
-      "title": "Amaan Ansari",
-      "description": "Former Treasurer, TechShuttle"
     }
   ]
 }

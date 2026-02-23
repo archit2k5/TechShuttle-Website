@@ -1,81 +1,150 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import eventsData from "../../data/eventsData.json";
 import EventsPopup from "./components/EventsPopup";
 
 
 export default function Events() {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [filter, setFilter] = useState("all");
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const cards = sectionRef.current?.querySelectorAll('.events-card');
+    cards?.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, [filter]);
+
+  const tags = ["all", ...new Set(eventsData.map(e => e.tag.toLowerCase()))];
+  
+  const filteredEvents = filter === "all" 
+    ? eventsData 
+    : eventsData.filter(e => e.tag.toLowerCase() === filter);
+
   return (
-    <section className="events--section" id="Events">
-      <div className="events--container-box">
-        <div className="events--container">
-          <h2 className="events--heading">Recent Events</h2>
-        </div>
-        <div>
+    <section className="events-section-modern" id="Events" ref={sectionRef}>
+      {/* Background Effects */}
+      <div className="events-bg-effects">
+        <div className="events-gradient-orb events-orb-1"></div>
+        <div className="events-gradient-orb events-orb-2"></div>
+      </div>
+
+      {/* Header */}
+      <div className="events-header">
+        <span className="events-badge">What's Happening</span>
+        <h2 className="events-title">Recent Events</h2>
+        <p className="events-subtitle">
+          Explore our latest workshops, competitions, and tech gatherings
+        </p>
+        
+        {/* Social Buttons */}
+        <div className="events-social-btns">
           <button
-            className="btn btn-insta"
+            className="events-insta-btn"
             onClick={() =>
               window.open("https://www.instagram.com/techshuttlebvp/", "_blank")
             }
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 33 33"
-              fill="none"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M16.3333 0.166748C7.50028 0.166748 0.333252 7.33378 0.333252 16.1667C0.333252 24.9997 7.50028 32.1667 16.3333 32.1667C25.1489 32.1667 32.3333 24.9997 32.3333 16.1667C32.3333 7.33378 25.1489 0.166748 16.3333 0.166748ZM26.9016 7.54202C28.8105 9.8674 29.9559 12.8348 29.9906 16.0452C29.5394 15.9585 25.0274 15.0387 20.4808 15.6114C20.3767 15.3858 20.2899 15.1428 20.1858 14.8999C19.9081 14.2405 19.5958 13.5637 19.2834 12.9216C24.3159 10.8739 26.6066 7.9238 26.9016 7.54202ZM16.3333 2.52684C19.804 2.52684 22.9797 3.82836 25.3919 5.96285C25.1489 6.30992 23.0838 9.06914 18.2248 10.8912C15.9862 6.77846 13.5047 3.41187 13.1229 2.89126C14.1467 2.64831 15.2227 2.52684 16.3333 2.52684ZM10.5199 3.811C10.8843 4.2969 13.3138 7.68085 15.5871 11.7068C9.20093 13.4075 3.56102 13.3728 2.95364 13.3728C3.83867 9.13855 6.70201 5.61577 10.5199 3.811ZM2.65863 16.1841C2.65863 16.0452 2.65863 15.9064 2.65863 15.7676C3.24865 15.7849 9.87772 15.8717 16.6977 13.824C17.0969 14.5875 17.4613 15.3684 17.8084 16.1493C17.6348 16.2014 17.4439 16.2535 17.2704 16.3055C10.2248 18.5788 6.47642 24.7914 6.16405 25.312C3.99485 22.8999 2.65863 19.6895 2.65863 16.1841ZM16.3333 29.8413C13.1749 29.8413 10.2595 28.7654 7.95147 26.9606C8.19442 26.4574 10.971 21.1125 18.676 18.4227C18.7107 18.4053 18.7281 18.4053 18.7628 18.388C20.689 23.3684 21.47 27.5506 21.6782 28.748C20.0296 29.4595 18.2248 29.8413 16.3333 29.8413ZM23.9515 27.4986C23.8127 26.6656 23.0838 22.6743 21.2964 17.7632C25.5828 17.0864 29.3311 18.1971 29.7997 18.3533C29.2097 22.1537 27.0231 25.4335 23.9515 27.4986Z"
-                fill="currentColor"
-              />
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
             </svg>
-            Visit Our Instagram Page
+            Instagram
+          </button>
+          <button
+            className="events-linkedin-btn"
+            onClick={() =>
+              window.open("https://www.linkedin.com/company/techshuttle-bvcoe/", "_blank")
+            }
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
           </button>
         </div>
       </div>
 
-      <div className="events--section--container">
-        {eventsData.length === 0 ? (
-          <p>No events found.</p>
+      {/* Filter Tabs */}
+      <div className="events-filters">
+        {tags.map(tag => (
+          <button
+            key={tag}
+            className={`events-filter-btn ${filter === tag ? 'active' : ''}`}
+            onClick={() => setFilter(tag)}
+          >
+            {tag.charAt(0).toUpperCase() + tag.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Events Grid */}
+      <div className="events-grid">
+        {filteredEvents.length === 0 ? (
+          <p className="events-empty">No events found for this category.</p>
         ) : (
-          eventsData.map((item, index) => (
+          filteredEvents.map((item, index) => (
             <div
-              key={index}
-              className="events--section--card"
+              key={item.id}
+              className="events-card"
               onClick={() => setSelectedEvent(item)}
             >
-              <div className="events--section--img">
+              <div className="events-card-image">
+                <div className="events-card-tag">{item.tag}</div>
                 <img src={item.images[0]} alt={item.title || "Event"} />
+                <div className="events-card-overlay">
+                  <span className="events-card-view">View Details</span>
+                </div>
               </div>
-              <div className="events--section--card--content">
-                <h3 className="events--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
-                <p className="text-sm events--link">
-                  View Details
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 20 19"
-                    fill="none"
-                  >
-                    <path
-                      d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                      stroke="currentColor"
-                      strokeWidth="2.66667"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </p>
+              <div className="events-card-content">
+                <div className="events-card-meta">
+                  <span className="events-card-date">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    {item.date}
+                  </span>
+                </div>
+                <h3 className="events-card-title">{item.title}</h3>
+                <p className="events-card-desc">{item.description}</p>
+                <div className="events-card-footer">
+                  <div className="events-card-speakers">
+                    {item.speakers?.slice(0, 3).map((speaker, i) => (
+                      <div key={i} className="events-card-speaker-avatar" title={speaker}>
+                        {speaker[0]}
+                      </div>
+                    ))}
+                    {item.speakers?.length > 3 && (
+                      <span className="events-card-more">+{item.speakers.length - 3}</span>
+                    )}
+                  </div>
+                  <span className="events-card-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
           ))
