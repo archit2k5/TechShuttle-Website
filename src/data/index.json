@@ -2,16 +2,17 @@
   "core1": [
     {
       "id": "1",
-      "src": "/img/arjun.jpg",
-      "title": "Arjun Srivastava",
-      "description": "Former Vice President, TechShuttle"
-    },
-    {
-      "id": "2",
       "src": "/img/manoj.png",
       "title": "Manoj",
       "description": "Former President, TechShuttle"
     },
+    {
+      "id": "2",
+      "src": "/img/arjun.jpg",
+      "title": "Arjun Srivastava",
+      "description": "Former Vice President, TechShuttle"
+    },
+    
     {
       "id": "3",
       "src": "/img/ansh2.jpg",

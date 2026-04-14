@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import heroAnimation from "../../assets/animations/hero_img.json";
 
+
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
@@ -9,7 +10,7 @@ export default function HeroSection() {
         <div className="hero--section--content">
           <p className="section--title">Welcome! to </p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color" color="red">
+            <span className="hero--section--title--color" color="red">
               TechShuttle
             </span>
           </h1>
