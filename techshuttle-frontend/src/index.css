@@ -1,0 +1,26 @@
+:root {
+  --red: #e63946;
+  --blue: #2563eb;
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --gray: #a1a1aa;
+
+  --bg-primary: var(--black);
+  --text-primary: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

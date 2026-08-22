@@ -1,0 +1,145 @@
+.home {
+  width: 100%;
+}
+
+.hero {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 8%;
+
+  overflow: hidden;
+}
+
+
+/* ---------- HERO CONTENT ---------- */
+
+.hero-content {
+  width: 45%;
+}
+
+.hero-tag {
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: clamp(48px, 6vw, 90px);
+  line-height: 0.95;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  max-width: 450px;
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 13px 25px;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--red);
+  color: white;
+  border: 1px solid var(--red);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--blue);
+}
+
+
+/* ---------- SHUTTLE ---------- */
+
+.hero-shuttle {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shuttle-placeholder {
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--blue);
+
+  color: var(--red);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: calc(100vh - 60px);
+
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 7%;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(45px, 13vw, 65px);
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-shuttle {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .shuttle-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+}
