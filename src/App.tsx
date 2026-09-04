@@ -443,7 +443,7 @@ function AboutSection() {
     { value: '400+', label: 'Members', sub: 'Active students across all years' },
     { value: '30+', label: 'Events', sub: 'Hackathons, talks & workshops' },
     { value: '5', label: 'Departments', sub: 'Technical, Design, Event Management & more' },
-    { value: '2022', label: 'Founded', sub: 'Five years of innovation' },
+    { value: '2022', label: 'Founded', sub: 'Four years of innovation' },
   ]
 
   return (
