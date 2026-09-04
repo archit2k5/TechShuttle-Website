@@ -149,7 +149,7 @@ function MemberCard({ member }: { member: Member }) {
         <div style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 18, fontWeight: 700, color: '#ffffff', marginBottom: 5, letterSpacing: '0.02em' }}>{member.name}</div>
         <div style={{ fontSize: 13, fontWeight: 500, color: '#e11d27', letterSpacing: '0.04em' }}>{member.role}</div>
       </div>
-      <div style={{ display: 'flex', gap: 10 }}>
+      {/* <div style={{ display: 'flex', gap: 10 }}>
         {(['LI', 'GH'] as const).map((icon) => (
           <a key={icon} href="#" onClick={(e) => e.preventDefault()}
             style={{ width: 34, height: 34, borderRadius: 7, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, letterSpacing: '0.05em', color: 'rgba(240,240,245,0.35)', textDecoration: 'none', transition: 'all 0.2s' }}
@@ -158,7 +158,7 @@ function MemberCard({ member }: { member: Member }) {
             {icon}
           </a>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -440,10 +440,10 @@ function AboutSection() {
   const [statsRef, statsVisible] = useReveal()
 
   const stats = [
-    { value: '500+', label: 'Members', sub: 'Active students across all years' },
+    { value: '400+', label: 'Members', sub: 'Active students across all years' },
     { value: '30+', label: 'Events', sub: 'Hackathons, talks & workshops' },
-    { value: '6', label: 'Departments', sub: 'Technical, Creative, Events & more' },
-    { value: '2019', label: 'Founded', sub: 'Five years of innovation' },
+    { value: '5', label: 'Departments', sub: 'Technical, Design, Event Management & more' },
+    { value: '2022', label: 'Founded', sub: 'Five years of innovation' },
   ]
 
   return (
@@ -461,9 +461,8 @@ function AboutSection() {
           </h2>
           <p className={`reveal d2${textVisible ? ' in' : ''}`}
             style={{ fontSize: 16, lineHeight: 1.82, color: 'rgba(240,240,245,0.58)', marginBottom: 18 }}>
-            Tech Shuttle is the flagship technical society of our institution, founded in 2019
-            with a singular mission: to cultivate a culture of engineering excellence and
-            fearless innovation among students.
+            Tech Shuttle is the official tech society of our college, dedicated to fostering innovation, collaboration, and technical excellence. We organize coding competitions, hackathons, workshops, and tech talks to help students enhance their skills in programming, AI, web development, and more. Our mission is to create a dynamic community where tech enthusiasts can learn, grow, and push the boundaries of technology together. 🚀
+
           </p>
           <p className={`reveal d3${textVisible ? ' in' : ''}`}
             style={{ fontSize: 16, lineHeight: 1.82, color: 'rgba(240,240,245,0.58)', marginBottom: 48 }}>
@@ -474,9 +473,9 @@ function AboutSection() {
 
           {/* Key value props */}
           {[
-            { icon: '⚡', title: 'Hands-on Learning', desc: 'Real projects, real tools, real impact' },
-            { icon: '🌐', title: 'Industry Connect', desc: 'Mentors from top companies and startups' },
-            { icon: '🏆', title: 'Competitive Edge', desc: 'National hackathons and competitions' },
+            { icon: '⚡', title: 'Hands-on Learning', desc: 'Interactive Workshops, Best Resources' },
+            { icon: '🌐', title: 'Industry Connect', desc: 'Mentors from Seniors' },
+            { icon: '🏆', title: 'Competitive Edge', desc: 'Hackathons and competitions' },
           ].map((item, i) => (
             <div key={item.title} className={`reveal d${i + 2}${textVisible ? ' in' : ''}`}
               style={{ display: 'flex', gap: 16, alignItems: 'flex-start', marginBottom: 20, padding: '16px 20px', background: 'rgba(255,255,255,0.02)', borderRadius: 10, border: '1px solid rgba(255,255,255,0.05)' }}>
@@ -708,18 +707,17 @@ function Footer() {
               <SocialLink href="https://www.linkedin.com/company/techshuttle-bvcoe/posts/?feedView=all" label="LinkedIn" icon={<LinkedInIcon />} />
             </div>
             <p style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 13, color: 'rgba(240,240,245,0.28)', letterSpacing: '0.08em', textAlign: 'right', maxWidth: 220 }}>
-              The rocket you see<br />navigating this page?<br />It lands here. Welcome.
+              Let's Grow Together<br />With Tech Shuttle<br />🚀
+
             </p>
           </div>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-          <span style={{ fontSize: 12, fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(240,240,245,0.2)', letterSpacing: '0.06em' }}>
-            &copy; 2026 TECH SHUTTLE. ALL SYSTEMS GO.
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: 24, display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
+          <span style={{ fontSize: 16, fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(240,240,245,0.2)', letterSpacing: '0.06em' }}>
+            &copy; 2026 TECH SHUTTLE. ALL SYSTEMS GO. <br />Built with passion, launched with purpose.
           </span>
-          <span style={{ fontSize: 12, color: 'rgba(240,240,245,0.2)' }}>
-            Built with passion, launched with purpose.
-          </span>
+          
         </div>
       </div>
     </footer>
