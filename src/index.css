@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
 @import 'tailwindcss';
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  cursor: url('./imports/icons8-rocket-48.png') 4 4, auto;
+}
 
 body {
   font-family: 'DM Sans', sans-serif;
@@ -15,6 +18,10 @@ body {
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(225, 29, 39, 0.4); border-radius: 2px; }
+
+a, button, input, textarea, select, [role='button'] {
+  cursor: url('./imports/icons8-rocket-48.png') 4 4, pointer;
+}
 
 /* ── Scroll-reveal system ─────────────────────────────────── */
 
