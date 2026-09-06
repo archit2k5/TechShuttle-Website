@@ -88,7 +88,7 @@ const EVENTS: EventItem[] = [
 
 const FACULTY_HEAD: Member = {
   id: 0,
-  name: 'Rajat Gupta',
+  name: 'Mr. Rajat Gupta',
   role: 'Faculty Head',
   image: faculty,
 }
@@ -394,7 +394,7 @@ function HeroSection() {
           ref={contentRef}
           style={{ opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(28px)', transition: 'opacity 0.9s ease, transform 0.9s ease', willChange: 'transform, opacity' }}
         >
-          <Label>Technical Society</Label>
+          <Label>Technical Society of BVCOE</Label>
           <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 'clamp(72px, 10vw, 128px)', fontWeight: 900, lineHeight: 0.95, color: '#ffffff', marginBottom: 28, letterSpacing: '-0.01em' }}>
             TECH<br />SHUTTLE
           </h1>
@@ -717,7 +717,7 @@ function Footer() {
           <span style={{ fontSize: 16, fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(240,240,245,0.2)', letterSpacing: '0.06em' }}>
             &copy; 2026 TECH SHUTTLE. ALL SYSTEMS GO. <br />Built with passion, launched with purpose.
           </span>
-          
+
         </div>
       </div>
     </footer>
